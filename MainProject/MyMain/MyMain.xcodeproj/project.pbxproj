@@ -14,6 +14,10 @@
 		68539F8520373C10006FB73F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68539F8320373C10006FB73F /* LaunchScreen.storyboard */; };
 		68539F9020373C10006FB73F /* MyMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68539F8F20373C10006FB73F /* MyMainTests.swift */; };
 		68539F9B20373C10006FB73F /* MyMainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68539F9A20373C10006FB73F /* MyMainUITests.swift */; };
+		6853A0C120374D4B006FB73F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6853A0BD20374D4B006FB73F /* Main.storyboard */; };
+		6853A0C220374D4B006FB73F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6853A0BF20374D4B006FB73F /* LaunchScreen.storyboard */; };
+		6853A0C520374D7D006FB73F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6853A0C320374D7D006FB73F /* AppDelegate.swift */; };
+		6853A0C620374D7D006FB73F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6853A0C420374D7D006FB73F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 		68539F9620373C10006FB73F /* MyMainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68539F9A20373C10006FB73F /* MyMainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainUITests.swift; sourceTree = "<group>"; };
 		68539F9C20373C10006FB73F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6853A08320374C38006FB73F /* NewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6853A0BE20374D4B006FB73F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Animations/TargetMain/MM/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6853A0C020374D4B006FB73F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Animations/TargetMain/MM/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6853A0C320374D7D006FB73F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Animations/TargetMain/MM/AppDelegate.swift; sourceTree = "<group>"; };
+		6853A0C420374D7D006FB73F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Animations/TargetMain/MM/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +80,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6853A08020374C38006FB73F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		68539F6E20373C10006FB73F = {
 			isa = PBXGroup;
 			children = (
+				6853A0C320374D7D006FB73F /* AppDelegate.swift */,
+				6853A0C420374D7D006FB73F /* ViewController.swift */,
+				6853A0BF20374D4B006FB73F /* LaunchScreen.storyboard */,
+				6853A0BD20374D4B006FB73F /* Main.storyboard */,
 				68539F7920373C10006FB73F /* MyMain */,
 				68539F8E20373C10006FB73F /* MyMainTests */,
 				68539F9920373C10006FB73F /* MyMainUITests */,
@@ -90,6 +110,7 @@
 				68539F7720373C10006FB73F /* MyMain.app */,
 				68539F8B20373C10006FB73F /* MyMainTests.xctest */,
 				68539F9620373C10006FB73F /* MyMainUITests.xctest */,
+				6853A08320374C38006FB73F /* NewApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +202,23 @@
 			productReference = 68539F9620373C10006FB73F /* MyMainUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6853A08220374C38006FB73F /* NewApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6853A0AE20374C39006FB73F /* Build configuration list for PBXNativeTarget "NewApp" */;
+			buildPhases = (
+				6853A07F20374C38006FB73F /* Sources */,
+				6853A08020374C38006FB73F /* Frameworks */,
+				6853A08120374C38006FB73F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewApp;
+			productName = NewApp;
+			productReference = 6853A08320374C38006FB73F /* NewApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +243,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 68539F7620373C10006FB73F;
 					};
+					6853A08220374C38006FB73F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 68539F7220373C10006FB73F /* Build configuration list for PBXProject "MyMain" */;
@@ -223,6 +265,7 @@
 				68539F7620373C10006FB73F /* MyMain */,
 				68539F8A20373C10006FB73F /* MyMainTests */,
 				68539F9520373C10006FB73F /* MyMainUITests */,
+				6853A08220374C38006FB73F /* NewApp */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +292,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6853A08120374C38006FB73F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6853A0C120374D4B006FB73F /* Main.storyboard in Resources */,
+				6853A0C220374D4B006FB73F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +332,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6853A07F20374C38006FB73F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6853A0C520374D7D006FB73F /* AppDelegate.swift in Sources */,
+				6853A0C620374D7D006FB73F /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,6 +369,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				68539F8420373C10006FB73F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6853A0BD20374D4B006FB73F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6853A0BE20374D4B006FB73F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6853A0BF20374D4B006FB73F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6853A0C020374D4B006FB73F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -512,6 +589,34 @@
 			};
 			name = Release;
 		};
+		6853A0A820374C39006FB73F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Animations/TargetMain/MM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthi.NewApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6853A0A920374C39006FB73F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Animations/TargetMain/MM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthi.NewApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +652,15 @@
 			buildConfigurations = (
 				68539FA620373C10006FB73F /* Debug */,
 				68539FA720373C10006FB73F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6853A0AE20374C39006FB73F /* Build configuration list for PBXNativeTarget "NewApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6853A0A820374C39006FB73F /* Debug */,
+				6853A0A920374C39006FB73F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
